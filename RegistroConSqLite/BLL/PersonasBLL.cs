@@ -101,7 +101,7 @@ namespace RegistroConSqLite.BLL
             return p;
         }
 
-        public List<Persona> GetList(Expression<Func<Persona, bool>> persona)
+        public static List<Persona> GetList(Expression<Func<Persona, bool>> persona)
         {
             List<Persona> lista = new List<Persona>();
             Contexto db = new Contexto();

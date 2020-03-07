@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RegistroConSqLite.BLL;
+using RegistroConSqLite.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +22,16 @@ namespace RegistroConSqLite.UI.Consultar
         public Consultar()
         {
             InitializeComponent();
+        }
+
+        private void ConsultarButton_Click(object sender, RoutedEventArgs e)
+        {
+            List<Persona> listado = new List<Persona>();
+            listado = PersonasBLL.GetList(persona => true);
+
+            ConsultaDataGrid.ItemsSource = null;
+            ConsultaDataGrid.ItemsSource = listado;
+
         }
     }
 }
