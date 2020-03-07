@@ -154,6 +154,7 @@ namespace RegistroConSqLite
         private void ConsultarButton_Click(object sender, RoutedEventArgs e)
         {
             Consultar c = new Consultar();
+            c.ShowDialog();
         }
     }
 }
