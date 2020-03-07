@@ -24,5 +24,27 @@ namespace RegistroConSqLite
         {
             InitializeComponent();
         }
+
+        
+
+        private void BuscarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NuevoButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GuardarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EliminarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
